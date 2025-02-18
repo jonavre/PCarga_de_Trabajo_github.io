@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Carga de Trabajo</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; display: flex; }
-        .contenido { flex: 1; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            background-image: url('https://i.imgur.com/Jt6uI6D.png'); /* Imagen de fondo desde Imgur */
+            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* Hace que la imagen de fondo se quede fija mientras se hace scroll */
+        }
+        .contenido { 
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el contenido */
+            padding: 20px;
+            border-radius: 10px;
+        }
         .imagen { 
             width: 180px; /* Tamaño reducido */
             height: 150px; /* Mantiene la proporción */
             margin-top: -20px; /* Mueve la imagen hacia arriba */
-            margin-left: 60px; /* Espacio a la izquierda */
+            margin-left: 100px; /* Espacio a la izquierda */
         }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid black; padding: 8px; text-align: left; }
